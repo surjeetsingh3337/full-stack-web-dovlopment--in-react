@@ -66,8 +66,13 @@
         <h3>This Month's Promotions</h3>
       </div>
       <div class="col col-sm col-md">
-        <h2>Weekend Grand Buffet</h2>
-        <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+        <div class="media">
+          <img src="img/buffet.png" class="img-thumbnail d-flex mr-3">
+          <div class="media-body">
+            <h2 class="mt-0">Weekend Grand Buffet</h2>
+          </div>
+          <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+        </div>
       </div>
     </div>
     <div class="row row-content align-items-center">
@@ -81,6 +86,46 @@
             <h2 class="mt-0">Alberto Somayya</h2>
             <h4>Executive Chef</h4>
             <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-content align-items-center">
+      <div class="col-12 col-sm-8 offset-2">
+        <div class="card">
+          <div class="card-header bg-warning">
+            <h3 class="text-white">Reserve a Table</h3>
+          </div>
+          <div class="card-body">
+            <form>
+              <div class="form-group row">
+                <label for="numberguest" class="col-12 col-md-2 col-form-label">Number of Guests</label>
+                <div class="col-12 col-md-10">
+                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="1"> 1 &nbsp;
+                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="2"> 2 &nbsp;
+                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="3"> 3 &nbsp;
+                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="4"> 4 &nbsp;
+                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="5"> 5 &nbsp;
+                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="6"> 6 &nbsp;
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
+                <div class="col-12 col-md-8">
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <input required type="date" name="date" class=" form-control">
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <input required type="time" name="time" class="form-control">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary offset-2">
+                Reserve
+              </button>
+            </form>
           </div>
         </div>
       </div>
