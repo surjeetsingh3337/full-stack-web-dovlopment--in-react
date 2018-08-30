@@ -3,6 +3,10 @@ body{
     z-index:0;
 }
 
+textarea {
+  resize: none;
+}
+
 .navbar-dark {
      background-color: #512DA8;
 }
