@@ -39,8 +39,11 @@
           <h1>Ristorante con Fusion</h1>
           <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
         </div>
-        <div class="col-12 col-sm align-items-center">
+        <div class="col-12 col-sm align-items-center justify-content-center">
           <img src="img/logo.png" class="img-fluid">
+        </div>
+        <div class="col-12 col-sm-3 align-items-center">
+          <a class="btn btn-warning btn-block mt-5" role="button" href="#form">Reserve Table</a>
         </div>
       </div>
     </div>
@@ -67,11 +70,11 @@
       </div>
       <div class="col col-sm col-md">
         <div class="media">
-          <img src="img/buffet.png" class="img-thumbnail d-flex mr-3">
           <div class="media-body">
-            <h2 class="mt-0">Weekend Grand Buffet</h2>
+            <h2 class="mt-0">Weekend Grand Buffet <span class="badge badge-danger">NEW</span> </h2>
+            <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
           </div>
-          <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+          <img src="img/buffet.png" class="img-thumbnail d-flex mr-3">
         </div>
       </div>
     </div>
@@ -90,23 +93,33 @@
         </div>
       </div>
     </div>
-    <div class="row row-content align-items-center">
-      <div class="col-12 col-sm-8 offset-2">
+    <div class="row row-content align-items-center justify-content-center">
+      <div class="col-12 col-sm-8">
         <div class="card">
           <div class="card-header bg-warning">
             <h3 class="text-white">Reserve a Table</h3>
           </div>
-          <div class="card-body">
+          <div class="card-body" id="form">
             <form>
               <div class="form-group row">
                 <label for="numberguest" class="col-12 col-md-2 col-form-label">Number of Guests</label>
                 <div class="col-12 col-md-10">
-                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="1"> 1 &nbsp;
-                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="2"> 2 &nbsp;
-                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="3"> 3 &nbsp;
-                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="4"> 4 &nbsp;
-                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="5"> 5 &nbsp;
-                  <input type="radio" class="form-radio-input" required id="numberguest" name="numberguest" value="6"> 6 &nbsp;
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline1" required value="1" name="numberguest" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline1">1</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline2" required value="2" name="numberguest" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline2">2</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline3" required value="3" name="numberguest" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline3">3</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="customRadioInline4" required value="4" name="numberguest" class="custom-control-input">
+                    <label class="custom-control-label" for="customRadioInline4">4</label>
+                  </div>
                 </div>
               </div>
               <div class="form-group row">
