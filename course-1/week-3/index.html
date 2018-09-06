@@ -37,41 +37,122 @@
     </div>
   </nav>
   <div id="loginModal" class="modal fade" role="dialog">
-      <div class="modal-dialog modal-lg" role="content">
-          <!-- Modal content-->
-        <div class="modal-content">
-          <div class="modal-header">
-            <h4 class="modal-title">Login </h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <form>
-              <div class="form-row">
-                <div class="form-group col-sm-4">
-                  <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                  <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
-                </div>
-                <div class="form-group col-sm-4">
-                  <label class="sr-only" for="exampleInputPassword3">Password</label>
-                  <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
-                </div>
-                <div class="col-sm-auto">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox">
-                    <label class="form-check-label"> Remember me
-                    </label>
-                  </div>
+    <div class="modal-dialog modal-lg" role="content">
+        <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Login </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-sm-4">
+                <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="Enter email">
+              </div>
+              <div class="form-group col-sm-4">
+                <label class="sr-only" for="exampleInputPassword3">Password</label>
+                <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="Password">
+              </div>
+              <div class="col-sm-auto">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox">
+                  <label class="form-check-label"> Remember me
+                  </label>
                 </div>
               </div>
-              <div class="form-row">
-                  <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                  <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-              </div>
-            </form>
-          </div>
+            </div>
+            <div class="form-row">
+                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+  </div>
+  <div id="reserveModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg" role="content">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Reserve a Table</h3>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group row">
+              <div class="col-12 col-md-2 col-form-label">
+                <label for="numberofguest" class="col-form-label">Number of Guests</label>
+              </div>
+              <div class="col-12 col-md-8 pt-4">
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" required type="radio" name="noOfGuest" id="noOfGuest1" value="1">
+                  <label class="custom-control-label" for="noOfGuest1">1</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" required type="radio" name="noOfGuest" id="noOfGuest2" value="2">
+                  <label class="custom-control-label" for="noOfGuest2">2</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" required type="radio" name="noOfGuest" id="noOfGuest3" value="3">
+                  <label class="custom-control-label" for="noOfGuest3">3</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" required type="radio" name="noOfGuest" id="noOfGuest4" value="4">
+                  <label class="custom-control-label" for="noOfGuest4">4</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" required type="radio" name="noOfGuest" id="noOfGuest5" value="5">
+                  <label class="custom-control-label" for="noOfGuest5">5</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input class="custom-control-input" required type="radio" name="noOfGuest" id="noOfGuest6" value="6">
+                  <label class="custom-control-label" for="noOfGuest6">6</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-md-2 col-form-label">
+                <label for="section">Section</label>
+              </div>
+              <div class="col-12 col-md-8 btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-success active pt-2">
+                  <input type="radio" required name="section" id="option2" value="1" checked autocomplete="off"> Non-Smoking
+                </label>
+                <label class="btn btn-danger pt-2">
+                  <input type="radio" required name="section" id="option3" value="2" autocomplete="off"> Smoking
+                </label>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-12 col-md-2 col-form-label">
+                <label for="dateandtime" class="col-form-label">Date and Time</label>
+              </div>
+              <div class="col-12 col-md-8 pt-4">
+                <div class="form-row">
+                  <div class="col">
+                    <input required type="date" name="date" class="form-control">
+                  </div>
+                  <div class="col">
+                    <input required type="time" name="time" class="form-control">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-2"></div>
+              <div class="col-8">
+                <button type="button" data-dismiss="modal" class="btn btn-secondary">Cancel</button>
+                <button type="submit" class="btn btn-primary">Reserve</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
   <header class="jumbotron">
     <div class="container">
       <div class="row row-header">
@@ -83,8 +164,7 @@
           <img src="img/logo.png" class="img-fluid">
         </div>
         <div class="col-12 col-sm-3 align-items-center">
-          <a class="btn btn-warning btn-block mt-5" data-toggle="tooltip" data-html="true" title="Or Call us at  <br>
-          <strong>+852 12345678</strong>" data-placement="bottom"  role="button" href="#form">Reserve Table</a>
+          <a class="btn btn-warning btn-block mt-5" data-toggle="modal" data-target="#reserveModal" role="button">Reserve Table</a>
         </div>
       </div>
     </div>
@@ -174,56 +254,6 @@
         </div>
       </div>
     </div>
-    <div class="row row-content align-items-center justify-content-center">
-      <div class="col-12 col-sm-8">
-        <div class="card">
-          <div class="card-header bg-warning">
-            <h3 class="text-white">Reserve a Table</h3>
-          </div>
-          <div class="card-body" id="form">
-            <form>
-              <div class="form-group row">
-                <label for="numberguest" class="col-12 col-md-2 col-form-label">Number of Guests</label>
-                <div class="col-12 col-md-10">
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline1" required value="1" name="numberguest" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline1">1</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline2" required value="2" name="numberguest" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline2">2</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline3" required value="3" name="numberguest" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline3">3</label>
-                  </div>
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline4" required value="4" name="numberguest" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline4">4</label>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label for="dateandtime" class="col-12 col-md-2 col-form-label">Date and Time</label>
-                <div class="col-12 col-md-8">
-                  <div class="row">
-                    <div class="col-12 col-sm-6">
-                      <input required type="date" name="date" class=" form-control">
-                    </div>
-                    <div class="col-12 col-sm-6">
-                      <input required type="time" name="time" class="form-control">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <button type="submit" class="btn btn-primary offset-2">
-                Reserve
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
   <footer class="footer">
@@ -272,11 +302,6 @@
   <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('[data-toggle="tooltip"]').tooltip();
-    });
-  </script>
 </body>
 
 </html>
