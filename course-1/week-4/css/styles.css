@@ -47,7 +47,19 @@ body {
       left: 0;
       min-height: 300px; }
 
+.modal-content .modal-header {
+  background-color: #512DA8; }
+
+.modal-content .modal-title, .modal-content .close {
+  color: #fffaf0; }
+
+.modal-content .modal-body {
+  background-color: #D1C4E9; }
+
 #carouselButton {
-  right: 15px;
+  right: 0px;
   position: absolute;
   bottom: 0px; }
+
+#loginModalOpen {
+  cursor: pointer; }
