@@ -1,4 +1,4 @@
-## This Directory consist of all the assignments completed by myself while completing Full-Stack Web Development with React Specialization.
+## This Directory consist of all the assignments completed by me while completing Full-Stack Web Development with React Specialization.
 
 ### Description:
 
