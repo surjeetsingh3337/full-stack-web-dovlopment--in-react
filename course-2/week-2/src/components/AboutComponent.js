@@ -13,11 +13,7 @@ function RenderLeader(props) {
   return (
     <Media>
       <Media left middle href="#">
-        <Media
-          object
-          src={require("../assets/images/alberto.png")}
-          alt={props.leader.name}
-        />
+        <Media object src={props.leader.image} alt={props.leader.name} />
       </Media>
       <Media body className="pl-5">
         <Media heading>{props.leader.name}</Media>
