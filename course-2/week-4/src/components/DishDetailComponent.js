@@ -21,11 +21,12 @@ import { faPencilAlt } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 import { Loading } from "./LoadingComponent";
+import { baseUrl } from "../shared/baseUrl";
 
 function RenderDish(dishDetail) {
   return (
     <Card>
-      <CardImg top src={dishDetail.image} alt={dishDetail.name} />
+      <CardImg top src={baseUrl + dishDetail.image} alt={dishDetail.name} />
       <CardBody>
         <CardTitle>{dishDetail.name}</CardTitle>
         <CardText>{dishDetail.description}</CardText>
