@@ -12,6 +12,7 @@ import { Loading } from "./LoadingComponent";
 import { baseUrl } from "../shared/baseUrl";
 
 function RenderCard({ item, isLoading, errMess }) {
+  console.log(errMess);
   if (isLoading) {
     return <Loading />;
   } else if (errMess) {
@@ -33,6 +34,7 @@ function RenderCard({ item, isLoading, errMess }) {
 }
 
 function Home(props) {
+  console.log(props);
   return (
     <div className="container">
       <div className="row align-items-start">
