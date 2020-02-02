@@ -68,27 +68,11 @@ function RenderComments({ comments, postComment, dishId }) {
               );
             })}
           </Stagger>
+          <CommentForm dishId={dishId} postComment={postComment} />
         </ul>
       </div>
     );
   }
-  let commentList = comments.map((comment, i) => (
-    <li key={i} className="commentList">
-      {comment.comment}
-      <br />
-      <br />
-      -- {comment.author},
-      {new Intl.DateTimeFormat("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "2-digit"
-      }).format(new Date(Date.parse(comment.date)))}
-      <br />
-      <br />
-    </li>
-  ));
-  commentList.push(<CommentForm dishId={dishId} postComment={postComment} />);
-  return commentList;
 }
 
 const DishDetail = props => {
@@ -161,7 +145,6 @@ class CommentForm extends Component {
     });
   }
   submitComment(values) {
-    console.log(values.author);
     this.props.postComment(
       this.props.dishId,
       values.rating,
